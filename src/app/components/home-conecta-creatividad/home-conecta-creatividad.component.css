@@ -1,0 +1,184 @@
+  .TextConnect{
+    display: flex;    
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .collage-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    z-index: 1;
+  }
+  
+  .collage-image {
+    flex: 1;
+    min-width: 25%;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .collage-image:hover {
+    transform: scale(1.1);
+  }
+  
+  .creative-header {
+    font-family: 'Poppins', sans-serif;
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 15px;
+  }
+  
+  .animated-title {
+    font-size: 3.5rem;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+  }
+  
+  .paint-splash {
+    background: linear-gradient(45deg, #ff6b6b, #feca57, #48dbfb);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    display: block;
+    font-weight: 800;
+    animation: colorChange 8s infinite;
+  }
+  
+  .brush-stroke {
+    position: relative;
+    color: #2c3e50;
+    display: block;
+  }
+  
+  .brush-stroke::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: #3498db;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.5s ease;
+  }
+  
+  .creative-header:hover .brush-stroke::after {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+  
+  .color-palette {
+    background-image: linear-gradient(90deg, #ff9a9e 0%, #fad0c4 50%, #ffecd2 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    display: block;
+    font-weight: 700;
+  }
+  
+  .vibrant-text {
+    font-size: 1.2rem;
+    color: #34495e;
+    margin-bottom: 1.5rem;
+  }
+  
+  .social-cta {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .instagram-btn {
+    background: #d6249f;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .instagram-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  @keyframes colorChange {
+    0% { filter: hue-rotate(0deg); }
+    100% { filter: hue-rotate(360deg); }
+  }
+  
+  @media (max-width: 768px) {
+    .animated-title {
+      font-size: 2.5rem;
+    }
+    .vibrant-text {
+      font-size: 1rem;
+    }
+  }
+  
+
+/* css para los div de las imagenes */
+.grid-container {
+    margin: auto;
+    margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-height: 600px;
+    max-width: 1000px;
+    gap: 10px;
+    padding: 10px 50px;
+    overflow: hidden;
+}
+.contRigth {
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    overflow: hidden;
+    gap: 5px;
+    padding: 10px 0;
+}
+
+::ng-deep .imgGimgCont {
+    max-height: 290px;
+}
+.contImgRight {
+    
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    overflow: hidden;
+    gap: 5px;
+    max-height: 300px;
+}
+
+::ng-deep .imgsss {
+    display:flex;
+    background-position: center top;
+    overflow: hidden;
+}
+
+.imgscontleft{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    overflow: hidden;
+    gap: 5px;
+    max-height: 600px;
+    padding: 10px 0;
+}
+
+
+/* imagenes de los 4 div de categorias */
+.imgcat1 {
+    background-position: center top;
+    background-image: url('../../../assets/imgshome/img1Comic.jpg');
+}

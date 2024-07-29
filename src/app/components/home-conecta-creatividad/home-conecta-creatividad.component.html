@@ -1,0 +1,53 @@
+<div class="creative-header">
+  <div class="TextConnect">
+    <h1 class="animated-title">
+      <span class="paint-splash">Explora</span>
+      <span class="brush-stroke">tu Mundo</span>
+      <span class="color-palette">Artístico</span>
+    </h1>
+    <br>
+    <p class="vibrant-text">
+      Descubre obras únicas que darán vida a tus espacios 🎨🖼️
+    </p>
+  </div>
+    
+    <div class="grid-container">
+        <div class="contRigth">
+            <p-image class="imgsss imgGimgCont" src="https://primefaces.org/cdn/primeng/images/galleria/galleria10.jpg" alt="Image"></p-image>
+            <div class="contImgRight">
+                <p-image class="imgsss" src="https://primefaces.org/cdn/primeng/images/galleria/galleria10.jpg" alt="Image"></p-image>
+                <p-image class="imgsss" src="https://primefaces.org/cdn/primeng/images/galleria/galleria10.jpg" alt="Image"></p-image>
+                <p-image class="imgsss" src="https://primefaces.org/cdn/primeng/images/galleria/galleria10.jpg" alt="Image"></p-image>
+            </div>
+        </div>
+        <div class="imgscontleft">
+            <p-image class="imgsss" src="https://primefaces.org/cdn/primeng/images/galleria/galleria10.jpg" alt="Image"></p-image>
+            <p-image class="imgsss" src="https://primefaces.org/cdn/primeng/images/galleria/galleria10.jpg" alt="Image"></p-image>
+            <p-image class="imgsss" src="https://primefaces.org/cdn/primeng/images/galleria/galleria10.jpg" alt="Image"></p-image>
+            <p-image class="imgsss" src="https://primefaces.org/cdn/primeng/images/galleria/galleria10.jpg" alt="Image"></p-image>
+        </div>
+    </div>
+    <div class="social-cta">
+      <a href="#" class="instagram-btn">
+        <i class="fab fa-instagram"></i> Inspírate en Instagram
+      </a>
+    </div>
+  </div>
+
+  <div class="contenedorPrincipal">
+    <div *ngIf="isLoading" class="loading">Cargando publicaciones...</div>
+    <div *ngIf="error" class="error">{{error}}</div>
+    <div *ngIf="!isLoading && !error" class="grid-container">
+      <ng-container *ngFor="let post of instagramPosts; let i = index">
+        <div [ngClass]="{'contRigth': i === 0, 'imgscontleft': i > 0}">
+          <p-image class="imgsss" [src]="post.imageUrl" [alt]="post.caption"></p-image>
+          <div *ngIf="i === 0" class="contImgRight">
+            <ng-container *ngFor="let subPost of instagramPosts.slice(1, 4)">
+              <p-image class="imgsss" [src]="subPost.imageUrl" [alt]="subPost.caption"></p-image>
+            </ng-container>
+          </div>
+        </div>
+      </ng-container>
+    </div>
+    <button *ngIf="instagramPosts.length === 0" (click)="initiateInstagramAuth()">Conectar con Instagram</button>
+  </div>

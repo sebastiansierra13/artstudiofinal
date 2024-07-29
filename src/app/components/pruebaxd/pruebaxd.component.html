@@ -1,0 +1,18 @@
+<div class="title-section">
+    <h1>Banners</h1>
+    <p>Ordena y administra los Banners de la página principal</p>
+</div>
+    <br>
+<!-- Sección 3 Componente lista de banners -->
+<div class="banner-container">
+    <div #scrollPanel cdkDropList cdkDropListOrientation="horizontal" class="banner-list" (cdkDropListDropped)="drop($event)">
+      <div class="banner-item" *ngFor="let banner of banners; let i = index" cdkDrag>
+        <img [src]="banner" alt="Descripción de la imagen">
+        <button class="remove-btn" (click)="removeBanner(i)">✖</button>
+      </div>
+    </div>
+    <button class="upload-btn" (click)="fileInput.click()">Subir Banner</button>
+    <input type="file" #fileInput (change)="uploadBanner($event)" hidden>
+    <p-button styleClass="btnAdd" (click)="addServicio()" label="Guardar Cambios" [outlined]="true"></p-button>
+
+</div>      

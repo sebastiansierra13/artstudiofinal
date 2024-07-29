@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+/*ITEMS*/
+.title{
+    font-family: "Poppins";
+    font-weight: 600;
+}
+
+.subtitulo{    
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 300;
+    display: flex;
+    align-items: center; /* Alinea verticalmente los elementos del contenedor */
+}
+
+.icons{
+    padding-right: 2%;
+}
+
+/*Parte 1 El banner principal de la pagina*/
+
+.banner-second {
+    background: radial-gradient(rgba(1, 66, 160, 0.8) 0%, rgba(15, 19, 58, 0.8) 44.41%, rgba(16, 16, 52, 0.8) 56.43%, rgba(20, 16, 52, 0.8) 69.58%, rgba(48, 20, 54, 0.8) 100%, rgba(65, 25, 88, 0.8) 0%),
+                url('../../../assets/imgAboutUs/BANNER.jpg');
+    padding: 100px; /* Ajusta el valor según lo que necesites */
+    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el contenedor */
+    background-position: center; /* Centra la imagen en el contenedor */    
+}
+
+.title1{
+    font-size: 48px;
+    color: #ffffff;
+}
+
+.description {
+    font-family: "Poppins";
+    font-style: normal;
+    line-height: 1.5; /* Ajusta el espacio entre líneas */
+    font-weight: 400;
+    color: #ffffff;
+}
+
+::ng-deep .btnProducts {
+    background-color: #ffffff;
+    color: #000000; /* Color negro */
+    margin-right: 10px;
+  }
+
+::ng-deep .btnContact {
+    background-color: rgba(0, 0, 0, 0.1); /* Color de fondo transparente con 50% de opacidad */
+    color: #ffffff; /* Color de texto blanco */
+    border: 1px solid #ffffff; /* Borde blanco de 1px */
+    margin-right: 10px;
+}
+
+/*Parte 2 Primera division, about us*/
+
+.about-us{
+    padding: 3%;
+}
+
+.panel2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Para alinear verticalmente el contenido */
+    height: 100%; /* Asegura que el panel2 ocupe toda la altura del splitter */
+    padding: 5%;
+    text-align: justify;
+}
+.image-container {
+    width: 37rem; /* Ancho deseado para el contenedor de la imagen en rem */
+    height: 100%; /* Altura deseada para el contenedor de la imagen en rem */
+    overflow: hidden; /* Para ocultar cualquier parte de la imagen que se salga del contenedor */
+    padding-left: 10%;
+}
+
+.imagen1 {
+    width: 100%; /* Para asegurarse de que la imagen se ajuste al ancho del contenedor */
+    height: 100%; /* Para asegurarse de que la imagen se ajuste a la altura del contenedor */
+    object-fit: cover; /* Para que la imagen mantenga su relación de aspecto y se ajuste dentro del contenedor */
+    justify-content: right;
+}
+
+.subText{      
+    color: #000000;    
+}
+
+.title2{
+    display: flex;
+    font-size: 30px;
+    color: #000000;
+    justify-content: left;
+}
+
+
+.parrafo1 {
+    font-family: "Poppins";
+    font-style: normal;
+    font-size: 15px;
+    color: #666C89;
+}
+
+
+/*Parte 3 Terminos y condiciones mini Banner*/
+
+.company-policy{
+    width: 100%; /* Ancho deseado para el contenedor de la imagen en rem */
+    
+}
+.grid-container1 {
+    background: radial-gradient(rgba(1, 66, 160, 0.8) 0%, rgba(15, 19, 58, 0.8) 44.41%, rgba(16, 16, 52, 0.8) 56.43%, rgba(20, 16, 52, 0.8) 69.58%, rgba(48, 20, 54, 0.8) 100%, rgba(65, 25, 88, 0.8) 0%),
+                url('../../../assets/imgAboutUs/banner_pagina.jpg');
+    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el contenedor */
+    background-position: center; /* Centra la imagen en el contenedor */    
+}
+
+.content3{
+    padding-left: 15%;
+}
+
+.subBanner{      
+    color: #ffffff;    
+}
+
+.title3{
+    font-size: 30px;
+    color: #ffffff;
+}
+
+::ng-deep .btnhome {
+    background-color: rgba(0, 0, 0, 0.1); /* Color de fondo transparente con 50% de opacidad */
+    color: #ffffff; /* Color de texto blanco */
+    border: 1px solid #ffffff; /* Borde blanco de 1px */
+    margin-right: 10px;
+}
+
+/*Parte 4 Termino y condicones mini Banner*/
+
+.terms-and-conditions{
+    display: flex;
+}
+
+.image-left{
+    width: 80rem;
+    height: auto;
+    padding-left: 2%;
+    padding: 5%;
+}
+
+.text-right{
+    padding-top: 5%;
+}
+.divider-paragraph{
+    display: flex;
+    padding-right: 2%;
+    width: 80%;
+}
+
+::ng-deep .mat-divider {
+    border: 4px solid #AA205E; /* Define el grosor de la línea */
+    border-radius: 5px;
+}
+
+
+.parr{
+    text-align: left;
+    padding-left: 2%;
+}
+
+
+
+/*Contenido de la parte 5, banner 3*/
+
+.shipping-content {
+    display: flex;
+}
+
+.content4 {
+    display: flex;
+    align-items: center; /* Alinea verticalmente los elementos del contenedor */
+    justify-content: center;
+}
+
+.flex-container {
+    padding-top: 5%;
+    justify-content: left;
+    padding-left: 5%;
+}
+
+.title4{
+    font-size: 30px;
+    color: #ffffff;
+    padding-left: 2%;
+    padding-bottom: 1%;
+}
+
+.subtitulo {
+    margin: 4; /* Quita el margen por defecto del título */
+    padding: 2%;
+    padding-top: 2%;
+}
+
+.parrafo1 {
+    padding-left: 2%;
+}
+
+.flex-image {
+    width: 40rem; /* Ajusta el ancho de la imagen al contenedor */
+    height: auto; /* Para mantener la proporción de la imagen */
+    padding-top: 10%;
+    padding-left: 10%;
+}
+.imagen0 {
+   max-width: 100%;
+   max-height: 100%;
+}
+
+/* ultima parte del componente*/
+.return-policies{
+    padding-top: 5%;
+}
+.return-content {
+    display: flex;
+}
+
+/*Al reducir el tamanho de la ventana los textos reducen el tamanho de la fuente*/
+
+@media screen and (max-width: 768px) {
+    .subtitulo {
+        font-size: smaller; /* Reduce el tamaño de la fuente en pantallas pequeñas */
+    }
+
+    .parrafo1 {
+        font-size: x-small; /* Reduce el tamaño de la fuente en pantallas pequeñas */
+    }
+
+    .title2 {
+        font-size: medium;
+    }
+}

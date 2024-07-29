@@ -1,0 +1,97 @@
+<app-nav-bar></app-nav-bar>
+<div class="contenedor-principal">
+
+
+  <div class="container-viewService">
+    <div class="conLeft columna">
+      <div class="columnaRight">
+        <img [src]="imagenSeleccionada" alt="Imagen del botón" class="imgServiceGrande" />
+        <div class="columnaLeft">
+
+          <img *ngFor="let img of product?.Imagenes" [src]="img" alt="Imagen del producto" class="imgService"
+            (click)="seleccionarImagen(img)" />
+        </div>
+      </div>
+    </div>
+    <div class="conRight columna">
+      <h1 class="ptittle">{{ product?.nombreProducto }}</h1>
+      <p class="pText">Descripción</p>
+      <p>{{ product?.DescripcionProducto }}</p>
+      <p class="pText">Precio</p>
+      <p class="pPrice">200.000 - 500.000 COP</p>
+      <p class="pText">Medidas</p>
+      <p-dropdown [options]="nodes" [(ngModel)]="selectedNodes" optionLabel="tamanhoPoster" [showClear]="true"
+        placeholder="Selecciona una Medida" (onChange)="onNodeSelect()">
+      </p-dropdown> <br>
+      <p class="pText">Agregar Marco</p>
+      <div class="card flex justify-content-left">
+        <form [formGroup]="formGroup">
+          <p-toggleButton formControlName="checked" onLabel="Sí" offLabel="No" />
+        </form>
+      </div>
+      <br>
+      <div class="compact-input-number-container">
+        <button class="button decrement-button" (click)="decrement()">-</button>
+        <input type="number" [(ngModel)]="quantity" class="compact-input" min="1" max="100" (input)="onInput($event)" />
+        <button class="button increment-button" (click)="increment()">+</button>
+        <p-button 
+          label="Agregar al carrito" 
+          [rounded]="true" 
+          styleClass="p-button1"
+          [disabled]="!isOptionsSelected"
+          (onClick)="addToCart()"
+          pTooltip="Selecciona las opciones del producto primero"
+          [tooltipDisabled]="isOptionsSelected"
+        ></p-button>
+      </div>
+
+      <br>
+      <p-button *ngIf="precioSeleccionado !== 0" [label]="'Comprar Ahora $' + precioSeleccionado" [rounded]="true"
+        styleClass="p-button1">
+      </p-button>
+
+      <p-button *ngIf="precioSeleccionado === 0" label="Comprar Ahora" [rounded]="true" styleClass="p-button1">
+      </p-button>
+    </div>
+  </div>
+  <div class="contenedorCategorias">
+
+    <div class="textNewDesign">
+      <h1>Categorías</h1>
+    </div>
+    <p-scrollPanel [style]="{ width: '100%', height: '45rem' }" styleClass="custombar2">
+      <div class="grid-container">
+        <div *ngFor="let categoria of categorias" class="grid-item" (click)="selectCategory(categoria)"
+          [ngClass]="'imgcat'" [ngStyle]="{'background-image': 'url(' + categoria.imagenCategoria + ')'}">
+          <div class="overlay">{{ categoria.nombreCategoria }}</div>
+        </div>
+      </div>
+    </p-scrollPanel>
+  </div>
+</div>
+<div class="carousel-container">
+  <div class="title-section">
+    <mat-divider class="divider"></mat-divider>
+    <h1>INFORMACIÓN IMPORTANTE</h1>
+    <p>Actualiza información importante de ArtStudio.</p>
+  </div>
+
+  <p-carousel [value]="products" [style]="{ 'width': '100%' }" class="ngTemplatexd" [numVisible]="5" [numScroll]="3"
+    [circular]="true" [responsiveOptions]="responsiveOptions">
+    <ng-template class="ng-template" let-product pTemplate="item">
+      <div class="pruebaxd">
+        <div class="divImge zoom-shadow">
+          <img src="{{ product.image }}" [alt]="product.name" class="custom-img-size"
+            (click)="onImageClick(product.image)" />
+          <button pButton icon="pi pi-shopping-cart" class="add-to-cart-button"></button>
+        </div>
+        <div class="infoProductosCarousel contenedor-centrado">
+          <h4 class="">{{ product.name }}</h4>
+          <h6>{{ '$' + product.price }}</h6>
+        </div>
+      </div>
+    </ng-template>
+  </p-carousel>
+</div>
+<app-floating-buttons></app-floating-buttons>
+<app-footer></app-footer>

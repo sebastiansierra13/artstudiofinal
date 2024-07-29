@@ -1,0 +1,52 @@
+.contenedorhome{
+    display: block;
+    align-items: center;
+}
+.navxd{
+    position:absolute ;
+    width: 100%;
+}
+
+app-home-destacados{
+    z-index: 99;
+}
+
+.elegant-divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 2rem 0;
+    opacity: 0;
+    animation: fadeIn 0.5s forwards;
+  }
+  
+  .divider-line {
+    flex-grow: 1;
+    height: 1px;
+    background: linear-gradient(to right, transparent, #333, transparent);
+  }
+  
+  .divider-icon {
+    font-size: 0.5rem;
+    color: #333;
+    margin: 0 1rem;
+    transform: rotate(0deg);
+    transition: transform 0.3s ease;
+  }
+  
+  .elegant-divider:hover .divider-icon {
+    transform: rotate(180deg);
+  }
+  
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .elegant-divider {
+      margin: 1.5rem 0;
+    }
+  }

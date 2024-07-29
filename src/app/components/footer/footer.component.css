@@ -1,0 +1,76 @@
+.contenedor-imagen {
+    position: absolute;
+    left: 70%;
+    width: 30vw; /* Ancho deseado de tu imagen */
+    height: 60vh; /* Altura deseada de tu imagen */
+    background-image: url('../../../assets/imgLogin/BG.png'); /* Ruta de tu imagen */
+    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el contenedor */
+    z-index: 99;
+  }
+  
+  
+  
+  /* Estilos para el footer */
+  .footer {
+      background-color: #474747; /* Color de fondo */
+      color: #989898; /* Color del texto */
+      padding: 3rem 0; /* Espaciado interno */
+    }
+   
+    .footer-content {
+      display: flex; /*esta linea es la que pone todo en columnas */
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+   
+    .imagen {
+      display: inline-block;
+      width: 120px; /* Ancho deseado */
+      height: 149px; /* Altura deseada */
+    }
+    
+  
+    .social-media{
+      display: inline-block;
+      margin-right: 10px;
+      width: 30px; /* Ancho deseado */
+      height: 30px; /* Altura deseada */
+    }
+    .footer-section-1 {
+      flex: 1;
+      text-align: center;
+      font-family: 'Poppins', sans-serif;
+      padding: 0 4%;
+    }
+  
+    .footer-section {
+      flex: 1;
+      font-family: 'Poppins', sans-serif;
+      margin: 0 1rem;
+      
+    }
+  
+    .fas{
+      text-decoration: none;
+      color: #989898;
+    }
+  
+    .text-reset{
+      color: #989898;
+    }
+    
+    .footer-section h2 {
+      font-weight: bold;
+      margin-bottom: 1rem;
+      color: #ffffff;
+    }
+    
+    .footer-section p {
+      margin-bottom: 0.5rem;
+    }
+    
+    .footer-copyright {
+      text-align: center;
+      margin-top: 1rem;
+    }
+    
