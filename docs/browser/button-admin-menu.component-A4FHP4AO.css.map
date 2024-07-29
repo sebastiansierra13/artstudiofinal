@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/components/button-admin-menu/button-admin-menu.component.css"],
+  "sourcesContent": [".menu{\r\n    display: flex;\r\n    flex-direction: column;\r\n    margin-left: 3%;\r\n    max-width: 400px;\r\n    width: 100%;\r\n  }"],
+  "mappings": "AAAA,CAAC,KACG,QAAS,KACT,eAAgB,OAChB,YAAa,GACb,UAAW,MACX,MAAO,IACT",
+  "names": []
+}

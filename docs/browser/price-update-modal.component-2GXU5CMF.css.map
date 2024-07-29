@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/components/price-update-modal/price-update-modal.component.css"],
+  "sourcesContent": [".content {\r\n    display: flex;\r\n    flex-direction: column;\r\n    gap: 1rem;\r\n  }\r\n  \r\n  .field {\r\n    margin-top: 1rem;\r\n  }\r\n  \r\n  .buttons {\r\n    display: flex;\r\n    justify-content: flex-end;\r\n    gap: 1rem;\r\n    margin-top: 1rem;\r\n  }\r\n  \r\n  "],
+  "mappings": "AAAA,CAAC,QACG,QAAS,KACT,eAAgB,OAChB,IAAK,IACP,CAEA,CAAC,MACC,WAAY,IACd,CAEA,CAAC,QACC,QAAS,KACT,gBAAiB,SACjB,IAAK,KACL,WAAY,IACd",
+  "names": []
+}

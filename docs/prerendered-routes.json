@@ -1,0 +1,27 @@
+{
+  "routes": [
+    "/about",
+    "/add",
+    "/admin",
+    "/adminMenu",
+    "/blog",
+    "/btns",
+    "/car",
+    "/checkout",
+    "/detailed-cart",
+    "/footer",
+    "/highlights",
+    "/home",
+    "/homeBanner",
+    "/homecategorias",
+    "/homeconecta",
+    "/homedestacados",
+    "/list",
+    "/login",
+    "/nav",
+    "/newDesign",
+    "/products",
+    "/prueba",
+    "/wishlist"
+  ]
+}

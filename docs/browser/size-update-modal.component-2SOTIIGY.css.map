@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/components/size-update-modal/size-update-modal.component.css"],
+  "sourcesContent": [".content {\r\n    display: flex;\r\n    flex-direction: column;\r\n    gap: 1rem;\r\n  }\r\n  \r\n  .field {\r\n    margin-top: 1rem;\r\n  }\r\n  \r\n  .buttons {\r\n    display: flex;\r\n    justify-content: flex-end;\r\n    gap: 1rem;\r\n    margin-top: 1rem;\r\n  }\r\n\r\n  .ule{\r\n    display: flex;\r\n    flex-direction: row;\r\n    justify-content: space-between;\r\n    align-items: center;\r\n    margin-bottom: 1%;\r\n  }\r\n\r\n  "],
+  "mappings": "AAAA,CAAC,QACG,QAAS,KACT,eAAgB,OAChB,IAAK,IACP,CAEA,CAAC,MACC,WAAY,IACd,CAEA,CAAC,QACC,QAAS,KACT,gBAAiB,SACjB,IAAK,KACL,WAAY,IACd,CAEA,CAAC,IACC,QAAS,KACT,eAAgB,IAChB,gBAAiB,cACjB,YAAa,OACb,cAAe,EACjB",
+  "names": []
+}

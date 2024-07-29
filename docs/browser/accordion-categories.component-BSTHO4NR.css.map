@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/components/accordion-categories/accordion-categories.component.css"],
+  "sourcesContent": [".accordion-category {\r\n    border-bottom: 1px solid #ddd;\r\n  }\r\n  \r\n  .accordion-header {\r\n    padding: 10px;\r\n    cursor: pointer;\r\n    color: #e2e2e2;\r\n    background-color: #515151;\r\n    border-radius: 10px;\r\n    height: 4rem;\r\n    margin-bottom: 5px;\r\n    align-items: center;\r\n  }\r\n  \r\n  .accordion-header:hover {\r\n    color: #515151;\r\n    background-color: #e2e2e2;\r\n  }\r\n  \r\n  .accordion-content {\r\n    padding: 10px;\r\n    background-color: #fff;\r\n  }\r\n\r\n  .viewport {\r\n    height: 100vh; /* Ajusta esta altura seg\u00FAn tus necesidades */\r\n    width: 100%;\r\n    overflow: auto;\r\n}\r\n  "],
+  "mappings": "AAAA,CAAC,mBACG,cAAe,IAAI,MAAM,IAC3B,CAEA,CAAC,iBAJH,QAKa,KACT,OAAQ,QACR,MAAO,QACP,iBAAkB,QARtB,cASmB,KACf,OAAQ,KACR,cAAe,IACf,YAAa,MACf,CAEA,CAXC,gBAWgB,OACf,MAAO,QACP,iBAAkB,OACpB,CAEA,CAAC,kBApBH,QAqBa,KACT,iBAAkB,IACpB,CAEA,CAAC,SACC,OAAQ,MACR,MAAO,KACP,SAAU,IACd",
+  "names": []
+}
